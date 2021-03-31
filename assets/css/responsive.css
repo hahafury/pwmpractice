@@ -1,0 +1,228 @@
+@media (min-width:1025px){
+    .burgerMenu{
+        display:none;
+    }
+}
+
+@media (max-width:1024px){
+    footer .topFooter .leftTopFooter{
+        width:600px;
+        font-size: 11px;
+    }
+    main #products .productsElem img{
+        height:59px;
+    }
+    .headerTop .navigation{
+        display:none;
+    }
+    .burgerMenu{
+        position:absolute;
+        top:50px;
+        right:-100px;
+        border-bottom: 17px double black; 
+        border-top: 6px solid black; 
+        content:"";
+        height: 5px; 
+        width:30px;
+        padding:3px;
+        z-index: 999;
+    }
+    .headerTop .logo{
+        margin: auto;
+        position: absolute;
+        top: 150px; 
+        left: 0; 
+        bottom: 0; 
+        right: 0;
+    }
+    .headerTop .search{
+        margin: auto;
+        position: absolute;
+        top: 350px; 
+        left: 0; 
+        bottom: 0; 
+        right: 0;
+    }
+    .headerTop .search input[type = "text"]{
+        height:20px;
+    }
+    .headerTop .search img{
+        height:18px;
+        width:18px;
+    }
+    header.tomato_one{
+        height:250px;
+    }
+    header.contactUs .headerMiddle{
+        margin-top:250px;
+    }
+    main article.contactUsArticle .wrapper{
+        text-align: center;
+    }
+    article.contactUsArticle .wrapper .cross{
+        margin:0 auto;
+        margin-bottom:25px;
+    }
+    main article.contactUsArticle .wrapper .formField form .leftFormField input{
+        width:100%;
+    }
+    .rightFormField p {
+        margin-top:1rem;
+    }
+    header.tomato_all .headerMiddle{
+        margin-top:300px;
+    }
+    header.tomato_all .burgerMenu{
+        right:40px;
+    }
+    main article.tomatoAllArticle .wrapper .newsList .newsItemContent p{
+        font-size:14px;
+    }
+    main article.tomatoAllArticle .wrapper .newsList .newsItem .newsItemTitle p{
+        font-size:18px;
+    }
+    main article.tomatoAllArticle .wrapper .tomatosList .tomatoInfo{
+        min-height:200px;
+    }
+    main article.tomatoAllArticle .wrapper .tomatosList .tomatoInfo b{
+        font-size: 18px !important;;
+    }
+}
+
+@media (max-width:768px){
+    footer .topFooter .leftTopFooter{
+        width: 300px;
+        font-size: 9px;
+    }
+    main #products .productsElem p{
+        font-size:14px;
+    }
+    main article.tomatoOneArticle .wrapper .leftTomatoOne .tomatoName p:nth-child(1){
+        font-size:42px;
+    }
+    main article.tomatoOneArticle .wrapper .leftTomatoOne .tomatoName p:nth-child(2){
+        font-size:42px;
+    }
+    main article.tomatoOneArticle .wrapper .rightTomatoOne > img{
+        height:400px;
+    }
+    main article.tomatoOneArticle .wrapper .leftTomatoOne .quality p{
+        font-size: 24px;
+    }
+    header.contactUs .headerMiddle{
+        margin-top:250px;
+    }
+    main article.contactUsArticle .wrapper .formField form .rightFormField .code input[type = 'submit']{
+        width:150px;
+    }
+    main article.contactUsArticle .wrapper .formField form .rightFormField .code input[type = 'text']{
+        width:150px;
+    }
+}
+
+@media (max-width:640px){
+    .headerTop .burgerMenu{
+        right:20px;
+    }
+    main article.homepage .wrapper .vision .aboutVision .title{
+        font-size:46px;
+    }
+    main article.homepage .wrapper .mission .aboutMission .title{
+        font-size:46px;
+    }
+    main article.homepage .wrapper .vision .aboutVision .info{
+        font-size:16px;
+    }
+    main article.homepage .wrapper .mission .aboutMission .info{
+        font-size:16px;
+    }
+    main article.homepage .wrapper .mission .aboutMission{
+        left: 35px;
+        margin-right: 20px;
+    }
+    footer .topFooter .rightTopFooter img{
+        height:25px;
+        width:25px;
+    }
+    footer .topFooter div + div{
+        margin-left:100px;
+    }
+    main #products .productsElem p{
+        font-size:11px;
+    }
+    main article.contactUsArticle .wrapper .formField form .rightFormField .code input[type = 'submit']{
+        width:100px;
+    }
+    main article.contactUsArticle .wrapper .formField form .rightFormField .code input[type = 'text']{
+        width:100px;
+    }
+    main article.tomatoAllArticle .wrapper .tomatosList .tomatoInfo{
+        min-height:100px;
+    }
+}
+
+@media (max-width:480px){
+    main #products .productsElem p{
+        font-size: 11px;
+        text-align: center;
+        max-width: 50px;
+    }
+    main #products .productsElem img{
+        height: 30px!important;;
+        min-width:20px;
+    }
+    footer .topFooter .rightTopFooter{
+        margin: 0 auto;  
+    }
+    footer .topFooter .leftTopFooter{
+        width: 80%;
+        font-size: 9px;
+        margin: 0 auto;
+    }
+    main article.contactUsArticle .wrapper .formField form .rightFormField .code input[type = 'submit']{
+        width:150px;
+    }
+    main article.contactUsArticle .wrapper .formField form .rightFormField .code input[type = 'text']{
+        width:150px;
+    }
+}
+
+@media (max-width:320px){
+    .headerTop .search{
+        padding-left:20px;
+    }
+    .headerTop .search .line{
+        width:280px
+    }
+    .headerTop .search input[type = "text"]{
+        width:280px;
+    }
+    .headerTop .search img{
+        position:absolute;
+        left:262px;
+    }
+    main article.mainActivities p:nth-child(1){
+        font-size:48px;
+    }
+    main article.homepage .wrapper .mission .aboutMission .title{
+        font-size:30px;
+    }
+    main article.homepage .wrapper .mission .aboutMission .info{
+        font-size:14px;
+    }
+    footer .topFooter .leftTopFooter{
+        width:95%;
+    }
+    main article.contactUsArticle .wrapper .formField form .rightFormField .code input[type = 'submit']{
+        width:75px;
+    }
+    main article.contactUsArticle .wrapper .formField form .rightFormField .code input[type = 'text']{
+        width:75px;
+    }
+    main article.contactUsArticle .wrapper .formField form .rightFormField .code input[type = 'submit']{
+        font-size:10px;
+    }
+    header.tomato_all .burgerMenu{
+        right:20px;
+    }
+}

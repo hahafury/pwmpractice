@@ -1,0 +1,796 @@
+a{
+    color: black !important;
+    font-weight: 500;
+}
+
+/* ---Header--- */
+
+/* Homepage */
+header{
+    background: url(../img/bg.png);
+    height:850px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headerTop{
+    margin:0 auto;
+    padding-top:20px;
+}
+
+.headerTop .logo{
+    position: absolute;
+    width: 166px;
+    height: 83px;
+    left: 388px;
+    top: 20px;
+    mix-blend-mode: darken;
+}
+
+.headerTop .logo{
+    background: url(../img/Logo.png);
+    position:absolute;
+    top:20px;
+    left:0;
+    background-size: 100%;
+}
+
+.headerTop .search{
+    position:absolute;
+    right:0;
+    top:20px;
+    display:flex;
+    width:350px;
+    justify-content: space-between;
+}
+
+.headerTop img{
+    object-fit: contain;
+}
+
+.headerTop .search .line{
+    width:350px;
+    border:1px solid black;
+    height:0px;
+    position:absolute;
+    top:29px;
+}
+
+.headerTop .navigation{
+    position:absolute;
+    top:91px;
+    right:0;
+    width:499px;
+    display:flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: right;
+    margin-top: -20px;
+}
+
+.headerMiddle{
+    position: absolute;
+    top:362px;
+    margin:0 auto;
+}
+
+.headerMiddle p{
+    font-family: 'Roboto Slab', serif;
+    font-size:48px;
+    color:#735440;
+    margin-bottom:0px;
+    font-weight: 700;
+}
+
+.headerMiddle button{
+    margin-top:60px;
+    height:55px;
+    width:160px;
+    background-color: #57984C;
+    padding:16px 31px 16px 31px;
+    border:none;
+    color:white;
+    text-transform: uppercase;
+}
+
+.headerTop .search input[type = "text"]:focus{
+    outline: none;
+}
+
+.headerTop .search input[type = "text"]{
+    width:100%;
+    background-color: transparent;
+    border:none;
+}
+
+/* Tomato All */
+
+header.tomato_all{
+    background: none;
+    height:611px;
+}
+
+header.tomato_all .headerMiddle{
+    background: url(../img/pepper\ 9.jpg);
+    background-position: top;
+    position:absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    top:0;
+    height:480px;
+    margin-top:131px;
+    padding:0;
+
+}
+
+/* Tomato All End */
+
+/* Tomato One */
+header.tomato_one{
+    height: 122px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Tomato One End */
+
+/* Contact Us */
+
+header.contactUs{
+    background: none;
+    height:631px;
+}
+
+header.contactUs .headerMiddle{
+    background: url('../img/ContactUs.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    top:0;
+    height:480px;
+    margin-top:131px;
+    padding:0;
+    background-size: cover;
+}
+
+/* Contact Us End */
+
+/* ---Main--- */
+
+/* Homepage */
+main #products{
+    display:flex;
+    justify-content: space-evenly;
+    padding-top:45px;
+    padding-bottom:45px;
+}
+
+main #products .productsElem img{
+    margin:0 auto;
+}
+
+main #products .productsElem p{
+    position:relative;
+    top:20px;
+    font-size:20px;
+    font-weight: 20px;
+}
+
+main article.homepage{
+    background: #E5E5E5;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:auto;
+    padding-bottom:100px;
+    background-position-y: 71px;
+}
+
+.homepageSvg{
+    background-image: url('../img/Union\ \(2\).png');
+    position: absolute;
+    opacity: 0.4;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    background-repeat: no-repeat;
+    margin-top:71px;
+    background-position: top;
+}
+
+main article.homepage .wrapper{
+    margin:0 auto;
+    margin-top:71px;
+}
+
+main article.mainActivities .wrapper{
+    margin:0 auto;
+    padding-top:70px;
+    padding-bottom:69px;
+}
+
+main article.homepage .wrapper .circle{
+    background: url(../img/Circle.png);
+    width: 374px;
+    height: 374px;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    left: 35%;
+    margin-right: -50%;
+    position: absolute;
+    z-index:2;
+    top: 20px;
+}
+
+
+main article.homepage .wrapper > div{
+    position: relative;
+    z-index: 3;
+    display:flex;
+    height:498px;
+    margin-top: -20px;
+}
+
+main article.homepage .wrapper > div > div{
+    font-family: 'Roboto Slab', serif;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+main article.homepage .wrapper .vision .aboutVision .title{
+    font-size:64px;
+    font-weight: 700;
+    margin-bottom:0;
+}
+
+main article.homepage .wrapper .vision .aboutVision .info{
+    font-size:20px;
+}
+
+main article.homepage .wrapper .mission{
+    margin-top: 121px;
+}
+
+main article.homepage .wrapper .mission .aboutMission .title{
+    font-size:64px;
+    font-weight: 700;
+}
+
+main article.homepage .wrapper .mission .aboutMission .info{
+    font-size:20px;
+}
+
+main article.homepage .wrapper .mission .aboutMission{
+    position: relative;
+    left:70px;
+}
+
+
+main article.homepage .wrapper .vision .visionImg{
+    background: url(../img/Vision.png);
+    height:498px;
+    width:50%;
+    background-repeat: no-repeat;
+}
+
+main article.homepage .wrapper .mission .missionImg{
+    background: url(../img/Mission.png);
+    height:498px;
+    width:50%;
+    background-repeat: no-repeat;
+}
+
+main article.mainActivities{
+    background-color: #EDEDED;
+}
+
+main article.mainActivities p:nth-child(1){
+    font-size: 64px;
+    font-weight: 700;
+    font-family: 'Roboto Slab',sans-serif;
+    text-align: center;
+}
+
+
+main article.mainActivities .mainActivitiesList .activitiesElem .activitiesImg{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+
+main article.mainActivities .mainActivitiesList .activitiesElem .activitiesImg img{
+    object-fit: fill;
+}
+
+main article.mainActivities .mainActivitiesList .activitiesElem {
+    font-size:18px;
+    text-align: center;
+}
+
+main article.mainActivities .mainActivitiesList .activitiesElem hr{
+    color:#57984C;
+    border: 1px solid #57984C;
+    width:183px;
+}
+
+main article.mainActivities .mainActivitiesList .activitiesElem .activitiesTitle{
+    color:#57984C;
+    font-size:24px;
+    font-weight: 700;
+    min-height: 74px;
+}
+
+/* Homepage End */
+
+/* Tomato All*/
+
+main article.tomatoAllArticle{
+    padding-top:51px;
+    background-color: #f8fffb;
+}
+
+main article.tomatoAllArticle .wrapper{
+    margin: 0 auto;
+}
+
+main article.tomatoAllArticle .wrapper p:nth-child(1){
+    font-size:44px;
+    line-height: 63px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 700;
+    color:#324950;
+}
+
+
+main article.tomatoAllArticle .wrapper .infoText p{
+    font-size:17px;
+    font-weight: 400;
+    font-family: 'Roboto Slab', sans-serif;
+    line-height: 25px;
+    font-style: normal;
+}
+
+main article.tomatoAllArticle .wrapper .additionalInfo{
+    border-left:4px solid #EB5757;
+    border-radius: 4px; 
+    padding-left:26px;
+    margin-top: 26px;
+}
+main article.tomatoAllArticle .wrapper .additionalInfo p{
+    font-size:17px;
+    line-height: 25.5px;
+    font-weight: 400;
+}
+
+main article.tomatoAllArticle .wrapper .newsList{
+    background-color: #FFFAFA;
+    min-height:460px;
+}
+
+main article.tomatoAllArticle .wrapper .newsList .newsItem{
+    padding-top:50px;
+    padding-left:20px;
+}
+
+main article.tomatoAllArticle .wrapper .newsList .newsItem .newsItemTitle{
+    border-bottom: 1px solid #324950;
+}
+
+main article.tomatoAllArticle .wrapper .newsList .newsItem .newsItemTitle p{
+    color:#324950;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    margin-bottom:15px;
+}
+
+main article.tomatoAllArticle .wrapper .newsList .newsItemContent{
+    padding-top:15px;
+}
+
+main article.tomatoAllArticle .wrapper .newsList .newsItemContent p{
+    font-weight: 400;
+    font-size:17px;
+    line-height: 26px;
+}
+
+main article.tomatoAllArticle .wrapper .tomatosList{
+    margin-top:47px;
+}
+
+main article.tomatoAllArticle .wrapper .tomatosList .tomatoItem{
+    min-height: 360px;
+    padding:0px;
+}
+
+main article.tomatoAllArticle .wrapper .tomatosList .tomatoItem .tomatoImg{
+    height:252px;
+    padding:0px;
+}
+
+main article.tomatoAllArticle .wrapper .tomatosList .tomatoItem .tomatoImg img{
+    height:252px;
+    object-fit: cover;
+    width:100%;
+}
+
+main article.tomatoAllArticle .wrapper .tomatosList .tomatoInfo{
+    padding: 9px 18px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    background-color: white;
+    height:83px;
+    margin-bottom:50px;
+    color:#57984C;
+}
+
+/* Tomato All End*/
+
+/* Tomato One */
+
+main article.tomatoOneArticle{
+    padding-bottom:168px;
+    background: url('../../assets/img/Union5.png');
+    background-color: #F7F7F7;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+main article.tomatoOneArticle .wrapper{
+    margin:0 auto;
+    padding-top:18px;
+}
+
+main article.tomatoOneArticle .wrapper img{
+    display:inline;
+    margin-right:15px;
+}
+
+main article.tomatoOneArticle .wrapper span:nth-child(2){
+    color:#57984C;
+}
+
+
+main article.tomatoOneArticle .wrapper .leftTomatoOne .tomatoName p:nth-child(1){
+    color: #324950;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 142.7%;
+}
+
+main article.tomatoOneArticle .wrapper .leftTomatoOne .tomatoName p:nth-child(2){
+    color: #57984C;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 54px;
+    line-height: 142.7%;
+}
+
+main article.tomatoOneArticle .wrapper .leftTomatoOne .quality{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main article.tomatoOneArticle .wrapper .leftTomatoOne .quality p{
+    margin-left: 23px;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 43px;
+    color: #CF2333;
+    text-align:left;
+}
+
+main article.tomatoOneArticle .wrapper .leftTomatoOne .description{
+    margin-top:40px;
+}
+
+main article.tomatoOneArticle .wrapper .leftTomatoOne .description p{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    color: #57984C;
+    border-bottom:1px solid #57984C;
+    max-width:188px;
+    padding-bottom:18px;
+}
+
+main article.tomatoOneArticle .wrapper  .leftTomatoOne .description .descInfo p{
+    color:#324950;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 28px;
+    border:none;
+    padding:0;
+}
+
+main article.tomatoOneArticle .wrapper .rightTomatoOne{
+    text-align: right;
+}
+
+main article.tomatoOneArticle .wrapper .rightTomatoOne > img{
+    width: 540px;
+    height: 498px;
+}
+
+table img{
+    width:150px;
+    height:150px;
+}
+
+main article.tomatoOneArticle .wrapper .rightTomatoOne .addToCard{
+    width:225px;
+    height:55px;
+    float:right;
+    border:2px solid #57984C;
+    border-radius: 20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:15px;
+    font-weight: 700;
+    font-size:17px;
+}
+main article.tomatoOneArticle .wrapper .rightTomatoOne .addToCard a{
+    color:#57984C!important;
+}
+
+main article.tomatoOneArticle .wrapper .rightTomatoOne img + a img{
+    margin-top:30px;
+}
+
+main article.tomatoOneArticle .wrapper .bottomTomatoOne{
+    margin-top:30px;
+}
+
+main article.tomatoOneArticle .wrapper .bottomTomatoOne  p{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    color: #57984C;
+    border-bottom:1px solid #57984C;
+    max-width:188px;
+    padding-bottom:18px;
+}
+
+main article.tomatoOneArticle .wrapper .bottomTomatoOne .another{
+    padding:6px 0px 0px 0px;
+}
+
+main article.tomatoOneArticle .wrapper .bottomTomatoOne .another ul{
+    padding-left:20px;
+}
+
+main article.tomatoOneArticle .wrapper .bottomTomatoOne .another ul li{
+    color: #57984C;
+}
+
+main article.tomatoOneArticle .wrapper .bottomTomatoOne .another ul li span{
+    color:#324950;
+}
+/* Tomato One End */
+
+/* Contact Us */
+
+main article.contactUsArticle{
+    padding-top:51px;
+    background-color: #F7F7F7;
+}
+
+main article.contactUsArticle .wrapper{
+    margin: 0 auto;
+}
+main article.contactUsArticle .wrapper > p{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 63px;
+    color: #324950;
+}
+
+main article.contactUsArticle .wrapper .formField form{
+    padding-bottom:50.5px;
+}
+
+main article.contactUsArticle .wrapper .formField form .leftFormField p{
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 25px;
+    color: #324950;
+}
+
+main article.contactUsArticle .wrapper .formField form .leftFormField input + p{
+    padding-top:20px;
+}
+
+main article.contactUsArticle .wrapper .formField form .rightFormField * + p{
+    padding-top:20px;
+}
+
+main article.contactUsArticle .wrapper .formField form .rightFormField input,select{
+    width:100%;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    height:55px;
+}
+
+main article.contactUsArticle .wrapper .formField form .leftFormField input{
+    width:350px;
+    height:55px;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+main article.contactUsArticle .wrapper .formField form .rightFormField textarea{
+    height:390.75px;
+    width:100%;
+    background: #FFFFFF;
+    border: 1px solid #DADADA;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+main article.contactUsArticle .wrapper .formField form .rightFormField .code{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+main article.contactUsArticle .wrapper .formField form .rightFormField .code img{
+    width:99px;
+    height:27px;
+    mix-blend-mode: multiply;
+}
+
+main article.contactUsArticle .wrapper .formField form .rightFormField .code input[type = 'text']{
+    width:225px;
+    height:55px;
+}
+
+main article.contactUsArticle .wrapper .formField form .rightFormField .code input[type = 'submit']{
+    background: #57984C;
+    border-radius: 60px;
+    width: 255px;
+    height: 55px;
+    color:white;
+}
+
+main article.contactUsArticle .ourAdress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:44px;
+    background-color: #FFFFFF;
+    padding-bottom:44px;
+}
+
+main article.contactUsArticle .ourAdress p:nth-child(1){
+    margin:0;
+    padding-bottom:12px;
+    width: 183px;
+    text-align: center;
+    border-bottom:1px solid #57984C;
+    font-family:'Roboto Slab';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    color: #57984C;
+    margin-bottom:17px;
+}
+
+main article.contactUsArticle .ourAdress p + p{
+    margin:0px;
+}
+
+/* ---Footer--- */
+
+footer{
+    height: 127px;
+}
+
+footer .topFooter{
+    background-color: #2D3F45;
+    height:76px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .topFooter div + div{
+    margin-left:174px;
+}
+
+footer .topFooter .leftTopFooter{
+    font-size:16px;
+    line-height: 23px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    width:724px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .topFooter .leftTopFooter a{
+    color: white !important;
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer .topFooter .rightTopFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+footer .topFooter .rightTopFooter img + img{
+    margin-left:14.4px;
+}
+
+footer .bottomFooter{
+    background-color: #324950;
+    height:51px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:#B9B9B9;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400 !important;
+}
+
+.cross{
+    height: 6.242706298828125px;
+    width: 47.24261474609375px;
+    left: 404.99957275390625px;
+    top: 1333.9999694824219px;
+    border-radius: 0px;
+    background-image: url(../img/Crosses.png);
+    margin-bottom:39.59px;
+    margin-top:39.59px;
+}
+
+.order{
+    margin-top:2rem;
+}
+
+.visible{
+    display:block;
+}
+
+.hidden{
+    display:none;
+}

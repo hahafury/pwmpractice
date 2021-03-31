@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <script defer src="../assets/js/index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <header class = 'col-lg-12 tomato_one'>
+        <div class='row'>
+            <div class='headerTop col-md-8 '>
+               <div class='logo'></div>
+               <div class='search'>
+                   <input type="text" name = "searchField" placeholder="Search">
+                   <img src="../assets/img/Vector.png" alt="">
+                   <span class = 'line'></span>
+               </div>
+               <div class="navigation">
+                    <span><a href="../index.html">Home</a></span>
+                    <span><a href="">Company Profile</a></span>
+                    <span><a href="../pages/tomato_all.html">Products</a></span>
+                    <span><a href="">Services</a></span>
+                    <span><a href="">R & D</a></span>
+                    <span><a href="../pages/contact_us.html">Contact</a></span>
+               </div>
+               <div class="burgerMenu"></div>
+            </div>
+        </div>
+    </header> 
+    <main>
+        <article class = 'tomatoOneArticle col-md-12' v-if='product'>
+            <div class='row'>
+                <div class='wrapper col-md-8'>
+                    <span><img src="../assets/img/Arrow 1.png" alt=""></span><span>Return to all tomatoes</span>
+                    <div class="row" style = "padding-top:19px;">
+                        <div class="leftTomatoOne col-md-6">
+                            <div class="tomatoName">
+                                <p>{{this.product.title}}</p>
+                                <p>{{this.product.short_text}}</p>
+                            </div>
+                            <div class="cross"></div>
+                            <div class="quality">
+                                <img src="../assets/img/Quality.png" alt="">
+                                <p>Very high yield and excellent fruits quality!</p>
+                            </div>
+                            <div class="description">
+                                <p>CHARACTERISTICS</p>
+                                <div class="descInfo">
+                                    <p><b>Resistance</b>
+                                        <br>
+                                        {{this.product.desc}} 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rightTomatoOne col-md-6">
+                            <img :src="'../assets/img/'+this.product.image" alt="Tomato_Image">
+                            <div class="addToCard" @click.prevent = "addToCart(product.id)" v-if="!btnVisible"><a href="#">Add to cart</a></div>
+                            <div class="addToCard" v-if="btnVisible"><a href="contact_us.html">Go to cart</a></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="bottomTomatoOne col-md-12">
+                            <div class="row">
+                                <div class="leftBottomTomatoOne col-md-6">
+                                    <p>Plant</p>
+                                    <div class="another">
+                                        <ul>
+                                            <li><span>Strong vigor that provides good leaf coverage.</span></li>
+                                            <li><span>Very high productivity with good fruit setting.</span></li>
+                                            <li><span>Early matured variety.</span></li>
+                                        </ul>
+                                    </div>
+                                    <p>Fruit</p>
+                                    <div class="another">
+                                        <ul>
+                                            <li><span>Long shelf life on plant and post harvest.</span></li>
+                                            <li><span>Long shelf life on plant and post harvest.</span></li>
+                                            <li><span>Average fruit size: 140 – 160 grams.</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="rightBottomTomatoOne col-md-6">
+                                    <p>Cycle</p>
+                                    <div class="another">
+                                        <ul>
+                                            <li><span>Spring</span></li>
+                                            <li><span>Fall</span></li>
+                                            <li><span>Winter</span></li>
+                                        </ul>
+                                    </div>
+                                    <p>Color</p>
+                                    <div class="another">
+                                        <ul>
+                                            <li><span>Red</span></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="topFooter col-md-12">
+            <div class="row">
+                <div class="leftTopFooter text-center">
+                    <span><a href="">PROFILE </a></span>
+                    <span><a href="">MANAGEMENT</a></span>
+                    <span><a href="">PRODUCTS</a></span>
+                    <span><a href="">R&D</a></span>
+                    <span><a href="">LINKS</a></span>
+                    <span><a href="">SITEMAP</a></span>
+                    <span><a href="">CONTACT</a></span>
+                </div>
+                <div class="rightTopFooter">
+                    <img src="../assets/img/Ico_in.png" alt="">
+                    <img src="../assets/img/Ico_inst.png" alt="">
+                    <img src="../assets/img/Ico_tube.png" alt="">
+                    <img src="../assets/img/Ico_tw.png" alt="">
+                    <img src="../assets/img/Ico_fb.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter text-center">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/reset.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <script defer src="../assets/js/index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <header class = 'col-lg-12 contactUs'>
+        <div class='row'>
+            <div class='headerTop col-md-8 '>
+               <div class='logo'></div>
+               <div class='search'>
+                   <input type="text" name = "searchField" placeholder="Search">
+                   <img src="../assets/img/Vector.png" alt="">
+                   <span class = 'line'></span>
+               </div>
+               <div class="navigation">
+                   <span><a href="../index.html">Home</a></span>
+                   <span><a href="">Company Profile</a></span>
+                   <span><a href="../pages/tomato_all.html">Products</a></span>
+                   <span><a href="">Services</a></span>
+                   <span><a href="">R & D</a></span>
+                   <span><a href="../pages/contact_us.html">Contact</a></span>
+               </div>
+               <div class="burgerMenu"></div>
+            </div>
+            <div class='headerMiddle col-md-12'></div>
+        </div>
+    </header> 
+    <main>
+        <article class = 'contactUsArticle col-md-12'>
+            <div class='row'>
+                <div class='wrapper col-md-8'>
+                    <p>Contact Us</p>
+                    <div class="cross"></div>
+                    <table style = "margin-bottom:2rem;"v-if = "cartInfoVisible" width = 100%>
+                        <p v-if = "cartInfoVisible">Cart Info </p>
+                            <tr>
+                              <th>image</th>
+                              <th>title</th>
+                              <th>short_text</th>
+                              <th>remove</th>
+                            </tr>
+                            <tr v-if="cartInfo" v-for= 'p in cartInfo'>
+                              <td><img :src="'../assets/img/'+p.image" alt=""></td>
+                              <td>{{p.title}}</td>
+                              <td>{{p.short_text}}</td>
+                              <td><a href="" @click.prevent = "removeFromCart(p.id)">&#10006;</a> </td>
+                            </tr>
+                    </table>
+                    <div class="formField col-md-12">
+                        <form action="#" method = "POST">
+                            <div class="row" v-if="formVisible">
+                                <div class="leftFormField col-sm-12 col-lg-5">
+                                    <p>Name*</p>
+                                    <input type="text" name = "name" v-model = 'contactField.name' required>
+                                    <p>Company Name</p>
+                                    <input type="text" name = "cname" v-model = 'contactField.cname' required>
+                                    <p>Position</p>
+                                    <input type="text" name = "pos" v-model = 'contactField.pos' required>
+                                    <p>City</p>
+                                    <input type="text" name = "city" v-model = 'contactField.city' required>
+                                    <p>Country</p>
+                                    <input type="text" name = "country" v-model = 'contactField.country' required>
+                                    <p>Telephone</p>
+                                    <input type="tel" name = "tel" pattern = "[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" v-model = 'contactField.tel' required> 
+                                    <p>Email*</p>
+                                    <input type="email" name = "email" v-model = 'contactField.email' required>
+                                </div>
+                                <div class="rightFormField col-sm-12 col-lg-7">
+                                    <p>You are a</p>
+                                    <select name="choose" id="choose" v-model = 'contactField.choose'>
+                                        <option value="seedProducer">seed producer</option>
+                                    </select>
+                                    <p>If other, please specify</p>
+                                    <input type="text" name = "otherChoose" v-model = 'contactField.otherChoose'>
+                                    <p>You are interested in</p>
+                                    <textarea name="interestedIn" id="interestedIn" v-model = 'contactField.interestedIn'></textarea>
+                                    <p>Please type this code</p>
+                                    <div class="code">
+                                        <img src="../assets/img/Code.png" alt=""> <input type="text" class = "code" name = "code" v-model = 'contactField.code'> <input type="submit" name="submit" @click.prevent = "makeOrder(contactField.name,contactField.cname,contactField.pos,contactField.city,contactField.country,contactField.tel,contactField.email,contactField.choose,contactField.otherChoose,contactField.interestedIn,contactField.code)" id="submit">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order" v-if="orderVisible">
+                                <p>Name: {{contactField.name}}</p>
+                                <p>Position: {{contactField.cname}} </p>
+                                <p>City: {{contactField.pos}}</p>
+                                <p>Country: {{contactField.city}}</p>
+                                <p>Telephone: {{contactField.tel}}</p>
+                                <p>Email: {{contactField.email}}</p>
+                                <p>You are a:  {{contactField.choose}}</p>
+                                <p>Other:  {{contactField.otherChoose}}</p>
+                                <p>You are interested in: {{contactField.interestedIn}}</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="ourAdress col-md-12">
+                    <p>Our Adress</p>
+                    <p>AGRIDERA Seeds & Agriculture Ltd.</p>
+                    <p>P.O Box 103,</p>
+                    <p>Gedera 70750, Israel.</p>
+                    <p>Telephone: <span style = "color:#57984C">+972 8 944 9222</span></p>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="topFooter col-md-12">
+            <div class="row">
+                <div class="leftTopFooter text-center">
+                    <span><a href="">PROFILE </a></span>
+                    <span><a href="">MANAGEMENT</a></span>
+                    <span><a href="">PRODUCTS</a></span>
+                    <span><a href="">R&D</a></span>
+                    <span><a href="">LINKS</a></span>
+                    <span><a href="">SITEMAP</a></span>
+                    <span><a href="">CONTACT</a></span>
+                </div>
+                <div class="rightTopFooter">
+                    <img src="../assets/img/Ico_in.png" alt="">
+                    <img src="../assets/img/Ico_inst.png" alt="">
+                    <img src="../assets/img/Ico_tube.png" alt="">
+                    <img src="../assets/img/Ico_tw.png" alt="">
+                    <img src="../assets/img/Ico_fb.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bottomFooter text-center">AGRIDERA SEEDS & AGRICULTURE LTD. © 2020</div>
+    </footer>
+</body>
+</html>
