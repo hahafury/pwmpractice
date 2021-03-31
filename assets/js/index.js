@@ -87,6 +87,6 @@ var app = new Vue({
             this.formVisible = 0;
             this.orderVisible = 1;
             window.localStorage.remove('cart');
-        };   
-    }
+        },   
+    },
 });

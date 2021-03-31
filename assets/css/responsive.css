@@ -185,6 +185,9 @@
     main article.contactUsArticle .wrapper .formField form .rightFormField .code input[type = 'text']{
         width:150px;
     }
+    main article.mainActivities p:nth-child(1){
+        font-size:48px;
+    }
 }
 
 @media (max-width:320px){

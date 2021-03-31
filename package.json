@@ -1,11 +1,24 @@
 {
-  "name": "day-9-10",
+  "name": "shop",
   "version": "1.0.0",
-  "description": "",
+  "description": "myshop",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.12.3",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hahafury/pwmpractice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hahafury/pwmpractice/issues"
+  },
+  "homepage": "https://github.com/hahafury/pwmpractice#readme"
 }
