@@ -12,7 +12,10 @@
     "http-server": "^0.12.3",
     "jquery": "^3.6.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "favicons-webpack-plugin": "^5.0.2",
+    "webpack-pwa-manifest": "^4.3.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hahafury/pwmpractice.git"

@@ -783,6 +783,11 @@ footer .bottomFooter{
     margin-top:39.59px;
 }
 
+.visibleNav{
+    left:150px;
+    transition: left 1s;
+}
+
 .order{
     margin-top:2rem;
 }
@@ -794,3 +799,4 @@ footer .bottomFooter{
 .hidden{
     display:none;
 }
+

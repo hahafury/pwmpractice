@@ -16,6 +16,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script defer src="assets/js/burgermenu.js"></script>
+    <script>
+        if ('serviceWorker' in navigator){
+            navigator.serviceWorker
+            .register('/sw.js')
+            .then(function(){
+                console.log('Service worker registered');
+            });
+        }
+    </script>
 </head>
 <body>
     <header class = 'col-lg-12'>
@@ -35,7 +45,7 @@
                    <span><a href="">R & D</a></span>
                    <span><a href="pages/contact_us.html">Contact</a></span>
                </div>
-               <div class="burgerMenu"></div>
+               <div class="burgerMenu" onclick = burgerMenuVisible()></div>
             </div>
             <div class='headerMiddle col-md-8 text-center'>
                 <p>Agridera Seeds and Agriculture Ltd</p>

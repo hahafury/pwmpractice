@@ -13,7 +13,24 @@
         height:59px;
     }
     .headerTop .navigation{
+        position:absolute;
+        display: flex;
+        flex-direction: column;
+        background-color: black;
+        width:150px;
+        height:300px;
+        top:70px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 2rem;
+        opacity: 0.9;
+        right:-335px;
         display:none;
+        transition: right 1s;
+    }
+    .headerTop .navigation span a{
+        color: white !important;
+        font-size:10px;
     }
     .burgerMenu{
         position:absolute;
@@ -94,6 +111,11 @@
         width: 300px;
         font-size: 9px;
     }
+    .headerTop .navigation{
+        right:-295px;
+        display:none;
+        transition: right 1s;
+    }
     main #products .productsElem p{
         font-size:14px;
     }
@@ -158,6 +180,23 @@
     }
     main article.tomatoAllArticle .wrapper .tomatosList .tomatoInfo{
         min-height:100px;
+    }
+    .headerTop .navigation{
+        right:-170px;
+        display:none;
+        transition: right 1s;
+    }
+    .burgerMenu{
+        position: absolute;
+        top: 50px;
+        right: 30px;
+        border-bottom: 17px double black;
+        border-top: 6px solid black;
+        content: "";
+        height: 5px;
+        width: 30px;
+        padding: 3px;
+        z-index: 999;
     }
 }
 
