@@ -5,7 +5,10 @@ self.addEventListener('install',function(event){
             .then(function(cache){
                 console.log("precaching");
                 cache.add('/index.html');
+                cache.add('/');
+                cache.add('/pages/tomato_all.html');
                 cache.add('/')
+                cache.add('/pages/contact_us.html');
             })
     );
 });
@@ -23,4 +26,8 @@ self.addEventListener('fetch', function(event){
             }
         )
     );
+});
+self.addEventListener('push',event => {
+    const notification = event.data.text();
+    self.registration.showNotification(notification,{});
 });
